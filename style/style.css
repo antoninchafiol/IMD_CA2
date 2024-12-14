@@ -68,105 +68,15 @@ body, html {
 }
 
 /* =========== Hobbies & interess ============ */ 
-/* General Styles */
+
 body {
-  background-color: #000814; /* Space Black background for the entire page */
-  color: #FFFFFF; /* Bright White text for contrast */
+  background-color: #000814; 
+  color: #FFFFFF; 
 }
 
-/* Hero Section */
-.hero-section {
-  height: 100vh;
-  background-image: url('https://live.staticflickr.com/65535/52638633506_903d299d21_3k.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #FFFFFF;
-  position: relative;
-}
-
-.hero-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.4); /* Reduced opacity for smoother overlay */
-  z-index: -1;
-}
-
-.hero-section .hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.hero-section img {
-  width: 200px; /* Smaller profile image to blend better */
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.hero-section p {
-  font-size: 1.25rem;
-  margin-left: 10px;
-  background-color: rgba(0, 0, 0, 0.35); 
-  border-radius: 10px; 
-  padding: 10px; 
-  color: white; 
-  display: inline-block;
-}
-
-/* Hobbies & Interests Section */
-/* General Styles */
 body {
-  background-color: #000814; /* Space Black background for the entire page */
-  color: #FFFFFF; /* Bright White text for contrast */
-}
-
-/* Hero Section */
-.hero-section {
-  height: 100vh;
-  background-image: 
-    url('https://live.staticflickr.com/65535/52638633506_903d299d21_3k.jpg'),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.822)); /* Fades to black */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  background-color: #000814; 
   color: #FFFFFF;
-  position: relative;
-}
-
-.hero-section .hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.hero-section img {
-  width: 300px;
-  height: 300px;
-  object-fit: cover;
-}
-
-.hero-section p {
-  font-size: 1.25rem;
-  margin-left: 10px;
-  background-color: rgba(0, 0, 0, 0.25); 
-  border-radius: 10px; 
-  padding: 10px; 
-  color: white; 
-  display: inline-block;
 }
 
 /* Hobbies & Interests Section */
@@ -223,7 +133,7 @@ body {
 
 
 .hobbies .col-md-4 p {
-  color: #cccbcb; /* Deep Blue text for paragraph */
+  color: #cccbcb;
 }
 
 .work-interests {
@@ -261,12 +171,10 @@ body {
 
 
 /* =========== Education ============ */ 
-/* .timeline-section img{
-  height: 300px; object-fit: cover;
-} */
+
 
 .timeline-section h2{
-  /* background-color: #254150; */
+
   margin-bottom: 10px;
   align-items: center;
   margin: 0;
@@ -474,7 +382,7 @@ body {
 
 #experience h2 {
   text-align: center;
-  color: #cccbcb; /* Ice Lavender for headings */
+  color: #cccbcb;
 }
 
 @media screen and (min-width: 992px) {
@@ -513,12 +421,12 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  max-width: 80%; /* Restrict width */
+  max-width: 80%;
   margin: 0 auto;
 }
 
 #infoCard h4 {
-  color: #4fb1c2; /* Softer teal blue */
+  color: #4fb1c2;
   margin-bottom: 10px;
 }
 
@@ -532,7 +440,7 @@ body {
 }
 
 #infoCard strong {
-  color: #ff8c00; /* Soft fiery orange for highlights */
+  color: #ff8c00; 
 }
 
 
@@ -588,21 +496,20 @@ body {
 }
 
 .popup {
-  display: none; /* Hidden by default */
+  display: none; 
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Black background with transparency */
-  z-index: 1000; /* Ensure it's on top */
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000;
 }
 
-/* Popup content box */
 .popup-content {
   position: relative;
   background-color: white;
-  margin: 10% auto; /* Center vertically and horizontally */
+  margin: 10% auto; 
   padding: 20px;
   border-radius: 10px;
   width: 80%;
@@ -610,7 +517,6 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Close button */
 .close-btn {
   position: absolute;
   top: 10px;
@@ -631,7 +537,7 @@ body {
 
 section {
   position: relative;
-  padding-top: 30px; /* Adjust space for the horizontal bar */
+  padding-top: 30px; 
 }
 
 section::before {

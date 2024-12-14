@@ -107,11 +107,11 @@ const infoContent = {
 
 function showModal() {
     const modal = document.getElementById('cvModal');
-    modal.style.display = 'flex'; // Show the modal
+    modal.style.display = 'flex'; 
 }
 
 function closeModal() {
     const modal = document.getElementById('cvModal');
-    modal.style.display = 'none'; // Hide the modal
+    modal.style.display = 'none'; 
 }
 
