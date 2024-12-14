@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script src="./script/script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+  <link href="./style/style.css"  rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+            <a class="navbar-brand" href="#home"><b>Antonin Chafiol</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                <li class="nav-item"><a class="nav-link" href="#hobbies">Hobbies & Interests</a></li>
+                <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header id="home" class="hero-section">
+            <div class="hero-container text-center text-white">
+                <img src="https://avatars.githubusercontent.com/u/47667369?v=4" class="rounded-circle mb-4" alt="Profile Picture">
+                <p class="mb-4">
+                    Developer // Administrator // Automation Specialist // Data Enthusiast
+                </p>
+                <div class="d-flex justify-content-center gap-3">
+                    <button onclick="showModal()" class="btn btn-primary">Download CV</button>
+                    <button onclick="location.href='#contact'" class="btn btn-secondary">Contact Me</button>
+                </div>
+            </div>
+        </header>
+                 
+        <div data-spy="scroll" data-target="#navbar-main" data-offset="0">
+            <section id="hobbies" class="hobbies py-5">
+                <div class="container">
+                  <h2 class="text-center">Hobbies & Interests</h2>
+                  <p class="text-center mb-4">Here are some of the things I enjoy and am passionate about:</p>
+                  <div class="row">
+                    <div class="col-md-4 text-center mb-4">
+                      <i class="fas fa-camera fa-3x mb-3 text-primary"></i>
+                      <h5>Photography</h5>
+                      <p>Capturing moments and landscapes through the lens.</p>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                      <i class="fas fa-code fa-3x mb-3 text-success"></i>
+                      <h5>Coding</h5>
+                      <p>Exploring new technologies and creating interactive websites.</p>
+                    </div>
+                    <div class="col-md-4 text-center mb-4">
+                      <i class="fas fa-skiing  fa-3x mb-3 text-warning"></i>
+                      <h5>Skiing / Sports</h5>
+                      <p>Staying fit and enjoying outdoor adventures.</p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <section id="work-interests" class="work-interests py-5">
+                <div class="container">
+                  <h2 class="text-center">Type of Work I'm Interested In</h2>
+                  <p class="text-center mb-4">Here’s the kind of work that excites me and aligns with my skills:</p>
+                  <div class="row">
+                    <div class="col-md-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"><i class="fas fa-laptop-code text-primary me-2"></i>Development</h5>
+                          <p class="card-text">Creating modern, responsive applications using mainly Python and other languages such as C++/C#.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"><i class="fas fa-database text-success me-2"></i> Databases & Systems</h5>
+                          <p class="card-text">Designing efficient database systems for data storage and management.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"><i class="fas fa-cogs text-warning me-2"></i> Automation</h5>
+                          <p class="card-text">Streamlining processes through automation and optimizing performance.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                      <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title"><i class="fas fa-brain text-danger me-2"></i> xAI & Machine/Deep Learning</h5>
+                          <p class="card-text">Developing intelligent systems using machine learning and explainable AI.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <section id="education" class="timeline-section">
+                <h2>Education</h2>
+                <p style="text-align: center;">(Click on images to open programs)</p>
+                <div>
+                    <div class="main-timeline-2">
+                        
+                        <!-- First Education Entry -->
+                        <div class="timeline-2 left-2">
+                            <div class="tl-card mb-3" style="max-width: 800px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./tud.png" class="img-fluid rounded-start" alt="tud" onclick="window.open('https://www.tudublin.ie/study/undergraduate/courses/computing-with-software-development/','_blank')">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title"><strong>BSc (Hons) Computing with Software Development</strong></h4>
+                                            <p class="location">TUD Tallaght - (2024- Expected 2025)</p>
+                                            <p><strong style="color:#ff6f00be">GPA:</strong> xx</p>
+                                            <p style="color: #cccbcb"><strong  style="color: white;">Key Courses:</strong> Development (C#/Python), Machine Learning/Artificial Intelligence</p>
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                            More Information
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <p>This program covers a broad range of software development skills, preparing students for roles like software engineer, app developer, data scientist, and more.</p>
+                                                            <p><strong>Relevant Projects:</strong> Learnable Machines <a href="#portfolio" class="link-to-projects">To check</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <!-- Second Education Entry -->
+                        <div class="timeline-2 right-2">
+                            <div class="tl-card mb-3" style="max-width: 800px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="./iutbeziers.webp" class="img-fluid rounded-start" alt="iutbeziers" onclick="window.open('https://www.iutbeziers.fr/','_blank')">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title"><strong>BSc in Administration & Network's Security</strong></h4>
+                                            <p class="location">UIT Béziers - (2020-2021)</p>
+                                            <p><strong style="color:#ff6f00be">GPA:</strong> 3.1</p>
+                                            <p><strong>Key Courses:</strong> Python development, Linux/Windows/Database/Network Administration, Security & Cryptography</p>
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                            More Information
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <p>This program focuses on network and system implementation, maintenance, and security, while also providing management modules for professional handling.</p>
+                                                            <p><strong>Note:</strong> No specific project as it's related to apprenticeship projects.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="timeline-2 left-2">
+                            <div class="tl-card mb-3" style="max-width: 800px;">
+                                <div class="row g-0 align-items-center">
+                                    <div class="col-md-4">
+                                        <img src="./iutrsstras.webp" 
+                                             class="img-fluid rounded-start w-100" 
+                                             alt="iutrsstras" 
+                                             style="object-fit: cover; height: 100%; max-height: 300px; padding-left: 10px; border-radius: 10px;" 
+                                             onclick="window.open('https://iutrs.unistra.fr/formations/but-bachelor-universitaire-de-technologie/but-informatique','_blank')">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h4 class="card-title"><strong>Technological Degree in Computer Science Software Development</strong></h4>
+                                            <p class="location">UIT Robert Schuman - (2017-2020)</p>
+                                            <p><strong style="color:#ff6f00be">GPA:</strong> Not Irish-type grades</p>
+                                            <p><strong>Key Courses:</strong> Basics of Computing, Software Development (Python, C, C++, C#, Java), SQL Databases, Architecture</p>
+                                            <div class="accordion" id="accordionExample">
+                                                <div class="accordion-item">
+                                                    <h2 class="accordion-header">
+                                                        <button class="accordion-button collapsed" 
+                                                                type="button" 
+                                                                data-bs-toggle="collapse" 
+                                                                data-bs-target="#collapseThree" 
+                                                                aria-expanded="false" 
+                                                                aria-controls="collapseThree">
+                                                            More Information
+                                                        </button>
+                                                    </h2>
+                                                    <div id="collapseThree" 
+                                                         class="accordion-collapse collapse" 
+                                                         data-bs-parent="#accordionExample">
+                                                        <div class="accordion-body">
+                                                            <p>This program offers a well-rounded experience in computing, with courses in software development, mathematics, and economics.</p>
+                                                            <p><strong>GPAs:</strong></p>
+                                                            <ul>
+                                                                <li><strong>Year 1:</strong> 2.5</li>
+                                                                <li><strong>Year 2:</strong> 2</li>
+                                                                <li><strong>Year 2bis:</strong> 3.2</li>
+                                                            </ul>
+                                                            <p><strong>Relevant Projects:</strong> Risotoi <a href="#portfolio" class="link-to-projects">To check</a></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                    </div>
+                </div>
+            </section>
+            
+            
+            <section id="experience" class="section">
+                <h2>My Experience</h2>
+                <div class="info-panel mt-4">
+                    <div class="btn-list me-4">
+                        <button class="btn btn-primary w-100 mb-2" onclick="updateInfo('supportengi')"><h5>Support Engineer</h5></button>
+                        <button class="btn btn-primary w-100 mb-2" onclick="updateInfo('apprentice')"><h5>Apprentice - Administrator</h5></button>
+                        <button class="btn btn-primary w-100 mb-2" onclick="updateInfo('intern')"><h5> Intern - Python Developer</h5></button>
+                    </div>
+
+                    <div class="info-card" id="infoCard">
+                        <h4>Select a Role</h4>
+                        <p>Click on a button to see detailed information about my experience.</p>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section id="portfolio" class="section text-white">
+                <div>
+                    <h2 class="text-center">Portfolio</h2>
+                    <p class="text-center">(Click on card to open project's URL)</p>
+                    <div class="text-center mb-4">
+                        <button class="btn btn-secondary filter-btn" data-filter="all">All</button>
+                        <button class="btn btn-secondary filter-btn" data-filter="Study">Study</button>
+                        <button class="btn btn-secondary filter-btn" data-filter="Personal">Personal</button>
+                        <button class="btn btn-secondary filter-btn" data-filter="Professionnal">Professionnal</button>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6" data-type="Study">
+                            <div class="card portfolio-card h-100" onclick="window.open('https://github.com/PROJ-24-25/docs-and-code-antoninchafiol','_blank')">
+                                <img class="img-fluid card-img-top max-img-height" src="https://images2.alphacoders.com/115/thumbbig-115320.webp" class="card-img" alt="Project 2">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>TUD Tallaght - Learnable Machines</strong></h5>
+                                    <p class="card-text"><b>Languages: </b>C# Blazor / Python Tensorflow</p>
+                                <p class="card-text">Reproduce Google's Teachable Machine for Education purpose</p>
+                            </div>
+                            </div>
+                        </div>
+                    <div class="col-lg-4 col-md-6" data-type="Study">
+                        <div class="card portfolio-card h-100"  onclick="window.open('https://github.com/antoninchafiol/A21_frigo','_blank')">
+                        <img class="card-img-top img-fluid max-img-height" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1mogiTRByYq3Nu8o7ditF_bxaJPDfGih4fmhAClL0dEUPEeoeLz2kTW4bVKFvbz_3BzpSxpLEUNVzc6DOHYeLziE8CC0Rdc1QqdYljYYCG4wP-I0lfsRO-lrLy7WlNv160ClOTvAfclyL/s1600/fresh-fruits-vegetables-2419.jpg" class="card-img" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>IUT Strasbourg - Risotoi</strong></h5>
+                                <p class="card-text"><b>Languages: </b>C# / SQL</p>
+                            <p class="card-text">Fetch recipes from available foods entered in the "fridge".</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-type="Professionnal">    
+                        <div class="card portfolio-card h-100 " onclick="showPopup('supportengi')" >
+                        <img class="card-img-top img-fluid max-img-height" src="https://s2.qwant.com/thumbr/474x316/6/7/9647acceaca18b715262f1d0d8eaa840a461d11baa32255bdbc81a39f5879b/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.NYKRiBA2XElczALc2qGMOgHaE8%26pid%3DApi&q=0&b=1&p=0&a=0" class="card-img" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>MMM - Ansible Automation Demo</strong></h5>
+                                <p class="card-text"><b>Languages: </b>Ansible / Bash</p>
+                            <p class="card-text">Automate upgrade of servers with respect to dependencies.</p> 
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6" data-type="Personal">
+                        <div class="card portfolio-card h-100 " onclick="window.open('https://github.com/antoninchafiol/voac','_blank')" >
+                            <img class="card-img-top img-fluid max-img-height" src="https://s1.qwant.com/thumbr/474x266/0/8/6ef36640e54120a7786f9a6e1c47e03168fe5e340ab06f946e228db380c093/th.jpg?u=https%3A%2F%2Ftse.mm.bing.net%2Fth%3Fid%3DOIP.HMirP0f-j7wyJ-1D0JAu3gHaEK%26pid%3DApi&q=0&b=1&p=0&a=0" class="card-img" alt="Project 3">
+                            <div class="card-body">
+                                <h5 class="card-title"><strong>Voac</strong></h5>
+                                    <p class="card-text"><b>Languages: </b>Python / Jupyter</p>
+                                <p class="card-text">A voice assistant that match vocal commands with macros.</p>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div id="infoCardPopup" class="popup">
+                <div class="popup-content">
+                  <span class="close-btn" onclick="closePopup()">&times;</span>
+                  <div id="infoCard"></div>
+                  <h3>This is not available</h3>
+                </div>
+              </div>
+
+              <section id="contact" class="contact">
+                <div class="container">
+                  <h2 class="text-center">Contact Me</h2>
+                  <p class="text-center">Feel free to reach out by filling out the form below:</p>
+                  <div class="row justify-content-center">
+                    <div class="col-md-8">
+                      <!-- Contact Form -->
+                      <form id="contactForm">
+                        <div class="mb-3">
+                          <label for="name" class="form-label">Your Name</label>
+                          <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="email" class="form-label">Your Email</label>
+                          <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="message" class="form-label">Your Message</label>
+                          <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
+                        </div>
+                        <div class="text-center">
+                          <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              <div class="modal fade" id="mailPopup" tabindex="-1" aria-labelledby="mailPopupLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="mailPopupLabel">Message Sent</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      Thank you for reaching out! Your message has been successfully sent. I’ll get back to you as soon as possible.
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            <div id="cvModal" class="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.7); justify-content: center; align-items: center;">
+                <div style="background: #00b4d8e7; padding: 20px; border-radius: 10px; text-align: center; max-width: 400px; width: 90%;">
+                    <h2 style="color: #034653;">Thank You!</h2>
+                    <p style="color: #f7f7ff;">You've successfully downloaded my CV.</p>
+                    <button onclick="closeModal()" style="background: #FF6F00; color: #FFFFFF; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">
+                        Close
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/08a6076b2a.js" crossorigin="anonymous"></script>
+</body>
